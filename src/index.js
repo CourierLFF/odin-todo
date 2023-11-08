@@ -2,6 +2,12 @@ import './styles/style.css'
 import './assets/imgs/odin.png'
 import { DisplayTodoItems } from './todoList'
 
-const todoItems = ['Item 1', 'Item 2', 'Item 3'];
+const todoItems = [];
 
-DisplayTodoItems(todoItems);
+const todoInputBox = document.querySelector("#todo-input");
+const todoAddButton = document.querySelector("#todo-input-button");
+
+todoAddButton.addEventListener('click', () => {
+    todoItems.push(todoInputBox.value);
+    DisplayTodoItems(todoItems);
+});
