@@ -1,3 +1,5 @@
+import { todoItems } from ".";
+
 const todoList = document.querySelector('.todo-list');
 
 export function DisplayTodoItems(todoItems) {
